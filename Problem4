@@ -1,0 +1,4 @@
+int seatsInTheater(int nCols, int nRows, int col, int row) {
+    int out = (nRows - row) * (nCols - col + 1);
+    return out;
+}
