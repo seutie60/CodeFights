@@ -1,0 +1,4 @@
+int candies(int n, int m) {
+    int out = m - (m%n);
+    return out;
+}
