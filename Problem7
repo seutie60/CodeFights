@@ -1,0 +1,6 @@
+int lateRide(int n) {
+    int hour = n/60;
+    int minu = n%60;
+    int out = (hour/10) + (hour%10) + (minu/10) + (minu%10);
+    return out;
+}
