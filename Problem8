@@ -1,0 +1,21 @@
+int phoneCall(int min1, int min2_10, int min11, int S) {
+    int min = 0;
+    int spend = 0;
+    int need = min1;
+    while(S >= need){
+        min++;
+        if(min == 1){
+            spend = min1;
+            need = min2_10;
+        }
+        if((min > 1) && (min < 11)){
+            spend = min2_10;
+            if(min == 10){need = min11;}
+        }
+        if(min > 10){
+            spend = min11;
+        }
+        S -= spend;
+    }
+    return min;
+}
